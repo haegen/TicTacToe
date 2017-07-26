@@ -1,7 +1,5 @@
 # coding: utf-8
 
-# In[1]:
-
 LEER = " "
 X = 'X'
 O = 'O'
@@ -11,9 +9,6 @@ field = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 player_one = X
 player_two = O
 fields = 9
-
-
-# In[2]:
 
 def __main__():
     global field
@@ -32,9 +27,6 @@ def __main__():
         else:
             check = new_move(X)
 
-
-# In[3]:
-
 def print_field():
     # print column header
     print "     1   2   3\n   +---+---+---+"
@@ -44,9 +36,6 @@ def print_field():
         print "   +---+---+---+"
         
     print ""
-
-
-# In[4]:
 
 def new_move(char):
     global fields
@@ -77,9 +66,6 @@ def new_move(char):
         print "All fields are taken."
         return 0
 
-
-# In[5]:
-
 def is_winner():
     if (   field[0][0] == player_one and field[0][1] == player_one and field[0][2] == player_one
         or field[1][0] == player_one and field[1][1] == player_one and field[1][2] == player_one
@@ -105,8 +91,4 @@ def is_winner():
             return True
     return False
 
-
-# In[ ]:
-
-
-
+__main__()
